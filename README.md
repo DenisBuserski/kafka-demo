@@ -20,7 +20,7 @@ In the project there is a default message that will run, once you start it. For 
 ```
 POST http://localhost:8080/api/v1/messages
 ```
-Example API:
+Example API:<br>
 ![example-api](example.png)
 
 ### Additional information
