@@ -1,5 +1,9 @@
 # Demo Kafka
 
+This is a simple project on how Kafka works. In the project there is a Producer and a Consumer
+
+
+
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
 .\bin\windows\kafka-server-start.bat .\config\server.properties
