@@ -21,7 +21,7 @@ In the project there is a default message that will run, once you start it. For 
 POST http://localhost:8080/api/v1/messages
 ```
 Example API:
-[example-api](example.png)
+![example-api](example.png)
 
 ### Additional information
 - [Kafka Tutorial - Core Concepts](https://www.youtube.com/watch?v=udnX21__SuU&list=PLN_xGGp_EzELV3J2Bp-kNkmI2Vor338NI&index=29&t=8s)
