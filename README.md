@@ -1,5 +1,7 @@
 # Demo Kafka
 
+![kafka-logo](kafka-logo.png)
+
 ### Description
 This is a small project on how Kafka works. I am working on Windows 11, so the commands are bit different then the ones for [Linux](https://kafka.apache.org/quickstart). For Windows settings, you can follow this [video](https://www.youtube.com/watch?v=LX5LKBYHmyU). I have listed the needed commands below, just configure them with the destination of where you have extracted Kafka.
 
