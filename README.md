@@ -33,24 +33,35 @@ In the project there is a default message that will run, once you start it. For 
 POST http://localhost:8080/api/v1/messages
 ```
 Example API:<br>
-![example-api](example.png)
+![example-api](example-api.png)
 
 After you finish the demo you should stop all 3 commands prompts(`Ctrl + C`) and delete the following folders: `logs`, `kafka-logs` 
 and the content of `zookeeper`.
 
 ### Additional information
 
-`Topics` - Producers publish messages to topics, and consumers read messages from the topic they are subscribe to. <br>
-Partitions - Each topic can have multiple partitions
-Offsets
+`Topics` - Producers publish messages(record / event) to topics, and consumers read messages from the topic they are subscribe to. The 
+default retention policy of a topic is 7 days(After 7 days, Kafka deletes the messages automatically independent of delivering to 
+consumers or not). <br>
+`Partitions` - Topics are separated into partitions inside the Kafka cluster, and the partitions are replicated among brokers. Producers do 
+not necessarily send messages to only one partition. <br>
+`Offsets` - This can ensure that messages are delivered to the consumer in the same order as they were stored in the partition. And, by storing the offsets that a consumer group already received, Kafka guarantees only-once delivery. <br>
 `Producer` - Produces message to a Topic. <br>
 `Consumer` - Consumes message from a Topic. <br>
-`Consumer group` - 
-`Broker` - A Kafka server is known as a Broker. The Broker is a bridge between Producers and Consumers. Stores the Topics. <br>
+`Consumer group` - <br>
+`Kafka Broker` - A Kafka server is known as a Broker(Node). The Broker is a bridge between Producers and Consumers. Handles the storage and 
+delivery of messages. Each Broker has an unique Id and is capable of managing one or more Topics. <br>
 `Kafka Cluster` - Group of 1 or more Brokers. <br>
 We can specify how many Clusters we want to create and how many Brokers we want in each Cluster. The number of Brokers 
 in each Cluster does not have to be the same.
-`Zookeeper` - Stores information about the Kafka Cluster. Manages the Kafka cluster
+`Zookeeper` - Stores information about the Kafka cluster. Manages the Kafka cluster. When a new broker enters the cluster 
+or a broker fails, ZooKeeper notifies the cluster. <br>
+
+Partition Leader. Producers only send messages to the partition leader, and the leader then synchronizes with the other brokers. Consumers will also poll from the partition leader because the increasing consumer group’s offset has to be synchronized too.
+
+![kafka-big-picture](kafka-big-picture.png)
+
+![kafka-broker-leader](kafka-broker-leader.png)
 
 
 
@@ -68,8 +79,10 @@ in each Cluster does not have to be the same.
 - [Apache Kafka® Components & Architecture Detailed Explanation in 15 min | Javatechie](https://www.youtube.com/watch?v=HUAa1Yg9NlI)
 - [Topics, partitions, and offsets in Kafka](https://www.youtube.com/watch?v=EA6haCVM06Y)
 
-
+<br>
 
 - [Apache Kafka Tutorial](https://www.javatpoint.com/apache-kafka)
 - [Apache Kafka Architecture](https://www.javatpoint.com/apache-kafka-architecture)
 - [How To Work With Apache Kafka In Spring Boot?](https://javatechonline.com/how-to-work-with-apache-kafka-in-spring-boot/)
+- [What Is Kafka? Definition, Working, Architecture, and Uses](https://www.spiceworks.com/tech/data-management/articles/what-is-kafka/)
+- [Introduction to Apache Kafka](https://www.baeldung.com/apache-kafka)
