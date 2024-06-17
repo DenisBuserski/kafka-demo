@@ -45,7 +45,7 @@ default retention policy of a topic is 7 days(After 7 days, Kafka deletes the me
 consumers or not). <br>
 `Partitions` - Topics are separated into partitions inside the Kafka cluster, and the partitions are replicated among brokers. Producers do 
 not necessarily send messages to only one partition. <br>
-`Offsets` - This can ensure that messages are delivered to the consumer in the same order as they were stored in the partition. And, by storing the offsets that a consumer group already received, Kafka guarantees only-once delivery. <br>
+`Offsets` -  Each message in a partition has a specific offset. This can ensure that messages are delivered to the consumer in the same order as they were stored in the partition. And, by storing the offsets that a consumer group already received, Kafka guarantees only-once delivery. <br>
 `Producer` - Produces message to a Topic. <br>
 `Consumer` - Consumes message from a Topic. <br>
 `Consumer group` - <br>
@@ -86,3 +86,4 @@ Partition Leader. Producers only send messages to the partition leader, and the 
 - [How To Work With Apache Kafka In Spring Boot?](https://javatechonline.com/how-to-work-with-apache-kafka-in-spring-boot/)
 - [What Is Kafka? Definition, Working, Architecture, and Uses](https://www.spiceworks.com/tech/data-management/articles/what-is-kafka/)
 - [Introduction to Apache Kafka](https://www.baeldung.com/apache-kafka)
+- [Apache Kafka](https://developerexperience.io/articles/kafka)
