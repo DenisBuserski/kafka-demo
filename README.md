@@ -8,6 +8,8 @@ ones for [Linux](https://kafka.apache.org/quickstart). For Windows settings, you
 this [video](https://www.youtube.com/watch?v=LX5LKBYHmyU). I have listed the needed commands below, just configure 
 them with the destination of where you have extracted Kafka.
 
+<br>
+
 ### Configuration
 After you clone the repository, follow the commands below, by running them in different Windows PowerShell's in the directory 
 where you have extracted Kafka.
@@ -37,6 +39,8 @@ Example API:<br>
 
 After you finish the demo you should stop all 3 command prompts(`Ctrl + C`) and delete the following folders: `logs`, `kafka-logs` 
 and the content of `zookeeper`.
+
+<br>
 
 ### Additional information
 
