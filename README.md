@@ -106,6 +106,7 @@ to the new leader.
 - [Apache Kafka® Tutorials for Beginners | What & Why Apache Kafka? Brief introduction | JavaTechie](https://www.youtube.com/watch?v=xGwzuz8F9k0&list=PLN_xGGp_EzELV3J2Bp-kNkmI2Vor338NI&index=33&t=15s)
 - [Apache Kafka® Components & Architecture Detailed Explanation in 15 min | Javatechie](https://www.youtube.com/watch?v=HUAa1Yg9NlI)
 - [Topics, partitions, and offsets in Kafka](https://www.youtube.com/watch?v=EA6haCVM06Y)
+- [Kafka Error Handling with Spring Boot | Retry Strategies & Dead Letter Topics | JavaTechie](https://www.youtube.com/watch?v=aNBSd7T-RGA)
 
 <br>
 
