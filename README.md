@@ -117,3 +117,4 @@ to the new leader.
 - [Introduction to Apache Kafka](https://www.baeldung.com/apache-kafka)
 - [Apache Kafka](https://developerexperience.io/articles/kafka)
 - [Redpanda in a Nutshell](https://www.youtube.com/watch?v=hd9F1NqzVkY)
+- [Demo: Redpanda Console (Open House 2022)](https://www.youtube.com/watch?v=ezDYSpC7JcU)
