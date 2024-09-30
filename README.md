@@ -116,3 +116,4 @@ to the new leader.
 - [What Is Kafka? Definition, Working, Architecture, and Uses](https://www.spiceworks.com/tech/data-management/articles/what-is-kafka/)
 - [Introduction to Apache Kafka](https://www.baeldung.com/apache-kafka)
 - [Apache Kafka](https://developerexperience.io/articles/kafka)
+- [Redpanda in a Nutshell](https://www.youtube.com/watch?v=hd9F1NqzVkY)
