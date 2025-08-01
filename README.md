@@ -44,34 +44,10 @@ and the content of `zookeeper`.
 
 ### Additional information
 
-`Topics` - Producers publish messages(record / event) to topics, and consumers read messages from the topic they are subscribe to. The 
-default retention policy of a topic is 7 days(After 7 days, Kafka deletes the messages automatically independent of delivering to 
-consumers or not). 
-<br>
 
-`Partitions` - Topics are separated into partitions inside the Kafka cluster, and the partitions are replicated among brokers. Producers do 
-not necessarily send messages to only one partition. 
-<br>
 
-`Offsets` -  Each message in a partition has a specific offset. This can ensure that messages are delivered to the consumer in the same 
-order as they were stored in the partition. By storing the offsets that a consumer group already received, Kafka guarantees only-once 
-delivery. 
-<br>
 
-`Producer` - Produces message to a Topic. 
-<br>
 
-`Consumer` - Consumes message from a Topic. 
-<br>
-
-`Consumer group` - 
-<br>
-
-`Kafka Broker` - A Kafka server is known as a Broker(Node). The Broker is a bridge between Producers and Consumers. Handles the storage and 
-delivery of messages. Each Broker has an unique Id and is capable of managing one or more Topics. 
-<br>
-
-`Kafka Cluster` - Group of 1 or more Brokers. 
 <br>
 
 We can specify how many Clusters we want to create and how many Brokers we want in each Cluster. The number of Brokers 
